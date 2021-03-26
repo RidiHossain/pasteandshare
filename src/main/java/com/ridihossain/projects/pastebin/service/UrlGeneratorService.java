@@ -8,7 +8,7 @@ import java.util.Random;
 @Service
 public class UrlGeneratorService {
 
-    int urlLength = 10;
+    int urlLength = 20;
 
 
     public int getUrlLength() {
@@ -26,7 +26,6 @@ public class UrlGeneratorService {
         for (int i = 0; i < urlLength; i++) {
             url.append((char) (random.nextInt(90 - 65) + 65));
         }
-        System.out.println(url);
         return url.toString();
     }
 
